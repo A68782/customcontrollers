@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day?2 🎉</p>
-   </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashing Message</title>
+    <style>
+        body {
+            background-color: black;
+            /* Set the background to black */
+            display: flex;
+            /* Use flexbox to center the text */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            height: 100vh;
+            /* Full viewport height */
+            margin: 0;
+            /* Remove default margin */
+            font-family: sans-serif;
+            /* Use a sans-serif font */
+        }
+
+        .flashing-text {
+            color: #00FF00;
+            /* Set text color to bright green */
+            font-weight: bold;
+            /* Make text bold */
+            font-size: 4em;
+            /* Increase font size */
+            text-transform: uppercase;
+            /* Convert text to uppercase */
+            animation: flash 2s infinite;
+            /* Apply the flash animation with slower speed */
+        }
+
+        /* Keyframes for the flashing effect */
+        @keyframes flash {
+            0% {
+                opacity: 1;
+            }
+
+            /* Fully visible */
+            50% {
+                opacity: 0;
+            }
+
+            /* Invisible */
+            100% {
+                opacity: 1;
+            }
+
+            /* Back to fully visible */
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="flashing-text">CUSTOM CONTROLLERS IS A FRAUD</div>
+        <br>
+        <video width="560" height="315" unmuted autoplay>
+        <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
 </html>
